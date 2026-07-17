@@ -1,4 +1,21 @@
-.hidden { display: none; }.topButtons {
+/* Common Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.hidden { display: none; }
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Top Buttons */
+.topButtons {
   display: flex;
   justify-content: center;   /* মাঝখানে আনবে */
   gap: 20px;                 /* বাটনের মাঝে ফাঁকা */
@@ -13,23 +30,6 @@
   border-radius: 5px;
   font-size: 16px;
 }
-
-
-.loveOption {
-  background: #fff;
-  color: #000;
-  border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.loveOption:hover {
-  background: #ffeb3b;
-  color: #000;
-}
-
 
 /* Normal Quiz */
 #normalQuiz {
@@ -73,9 +73,10 @@
   background: #ffeb3b;
   color: #000;
 }
+
 #lQuestion {
   text-align: center;      /* লেখাকে মাঝখানে আনা */
-  font-size: 40px;         /* লেখাকে আরও বড় করা */
+  font-size: 40px;         /* লেখাকে বড় করা */
   font-weight: bold;       /* লেখাকে মোটা করা */
   margin: 30px 0;
 }
@@ -86,9 +87,40 @@
 
 #lOptions img {
   display: block;
-  margin: 20px auto;       /* ছবিকে একেবারে মাঝখানে বসানো */
-  max-width: 600px;        /* ছবিকে আরও বড় করা */
+  margin: 20px auto;       
+  max-width: 100%;   /* মোবাইল স্ক্রিন অনুযায়ী ফিট হবে */
+  height: auto;      /* অনুপাত ঠিক থাকবে */
 }
-<h3 style="text-align:center; color:blue; margin-top:10px;">
-  Developed by Ratul
-</h3>
+
+/* Footer */
+h3 {
+  text-align: center;
+  color: blue;
+  margin-top: 10px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  #lQuestion {
+    font-size: 24px;   /* মোবাইলে ছোট হবে */
+  }
+
+  .topButtons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .topButtons button {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .option {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

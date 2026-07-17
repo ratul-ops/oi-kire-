@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Selector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>🎮 কোন গেম খেলতে চাও?</h1>
+<div class="topButtons">
+  <button onclick="startNormalQuiz()">Normal Quiz</button>
+  <button onclick="startLoveQuiz()">Love Quiz</button>
+</div>
+
+<div id="timerBox"></div>
+
+<!-- Normal Quiz Container -->
+<div id="normalQuiz" class="hidden">
+  <h2>Normal Quiz</h2>
+  <button id="startBtn">START</button>
+  <div id="quizBox" class="hidden">
+    <div id="nQuestion"></div>
+    <div id="nOptions"></div>
+    <button id="nextBtn">Next</button>
+  </div>
+  <div id="resultBox" class="hidden">
+    <h2>তোমার স্কোর: <span id="score"></span></h2>
+    <button onclick="location.reload()">Play Again</button>
+  </div>
+</div>
+
+<!-- Love Quiz Container -->
+<div id="loveQuiz" class="hidden">
+  <h2>💗 প্রেম লজিক গেম 💗</h2>
+  <div id="lQuestion"></div>
+  <div id="lOptions"></div>
+  <div style="height:5000px;"></div>
+  <button id="startLoveBtn" class="loveOption hidden">শুরু করো</button>
+</div><div><h3 style="text-align:center; color:blue; margin-top:10px;">
+  Developed by Ratul
+</h3>
+</div><!-- কুইজের জন্য আলাদা div -->
+<div id="quizBox">
+  <!-- এখানে প্রশ্ন আসবে -->
+</div>
+
+
+<!-- সাউন্ড ফাইল -->
+<audio id="errorSound" src="error-beep.mp3"></audio>
+<script src="extraQuiz.js"></script>
+<script src="script.js"></script>
+<script src="loveQuiz.js"></script>
+<script src="sound.js"></script>
+
+
+
+</body>
+</html>

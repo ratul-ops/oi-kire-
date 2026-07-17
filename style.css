@@ -1,0 +1,94 @@
+.hidden { display: none; }.topButtons {
+  display: flex;
+  justify-content: center;   /* মাঝখানে আনবে */
+  gap: 20px;                 /* বাটনের মাঝে ফাঁকা */
+  margin: 20px 0;
+}
+
+.topButtons button {
+  background: orange;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+.loveOption {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.loveOption:hover {
+  background: #ffeb3b;
+  color: #000;
+}
+
+
+/* Normal Quiz */
+#normalQuiz {
+  background: #7cafcc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.option {
+  background: #ffffff;
+  color: #050101;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.option.correct { background: green; color: #fff; }
+.option.wrong { background: red; color: #fff; }
+
+/* Love Quiz */
+#loveQuiz {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.loveOption {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.loveOption:hover {
+  background: #ffeb3b;
+  color: #000;
+}
+#lQuestion {
+  text-align: center;      /* লেখাকে মাঝখানে আনা */
+  font-size: 40px;         /* লেখাকে আরও বড় করা */
+  font-weight: bold;       /* লেখাকে মোটা করা */
+  margin: 30px 0;
+}
+
+#lOptions {
+  text-align: center;      /* ছবিকে মাঝখানে আনা */
+}
+
+#lOptions img {
+  display: block;
+  margin: 20px auto;       /* ছবিকে একেবারে মাঝখানে বসানো */
+  max-width: 600px;        /* ছবিকে আরও বড় করা */
+}
+<h3 style="text-align:center; color:blue; margin-top:10px;">
+  Developed by Ratul
+</h3>
